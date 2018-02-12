@@ -17,7 +17,7 @@ function factory(name,male,age,doHave){
 		name:name,
 		male:male,
 		age:age,
-		doHave:doHave
+		doHave:doHave   
 	};
 }
 

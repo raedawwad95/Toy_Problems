@@ -5,8 +5,19 @@
           func(array[i]);
         }
     }
+
+    var array =[1,2,3,-1,-3,-6];
 	function absAll(array) {
 	 //your code here
+	 var arr =[];
+	 each(array , function(num){
+	 	if(num<0){
+	 		arr.push(num*-1);
+	 	}else{
+	 	arr.push(num)
+	 }
+	 } )
+	 return arr;
 	}
 
 	/*
@@ -24,4 +35,15 @@
     }
 	function multiplyOfFour(array) {
 	    //your code here
+	    var arr =[];
+
+	    each(array,function(num,i){
+	    	if(num%4===0){
+	    		arr.push(num*4)
+	    	}
+	    	
+
+
+	    })
+	    return arr;
 	}

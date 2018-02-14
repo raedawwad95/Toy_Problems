@@ -51,10 +51,10 @@ printValue(obj_1); =>
     
     
 	function printValue(obj) {
-        var str;
+        var str="";
 		// your code is here
         each(obj,function(element,key){
-            str +=element.key+'\n';
+            str =element+'\n';
         })
         return str;
 	}

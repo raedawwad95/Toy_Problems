@@ -12,6 +12,16 @@
  ]; 
  function averageAge(people) { 
        // YOUR CODE HERE 
+       var ave=0;
+       var len = 0
+
+       for (var i = 0; i < people.length; i++) {
+       	if(people[i].age>18 && people[i].age <50){
+       		ave = ave + people[i].age;
+       		len ++;
+       	}
+       }
+       return ave/len
  }
 
  averageAge(people); // 43+36+44+24 = 36.74

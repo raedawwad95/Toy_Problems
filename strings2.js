@@ -25,6 +25,6 @@
 
 	function numberToString(num) {
 	  //your code is here
-	  string =num.toString();
-	  return s;
+	 var string =num.toString();
+	  return string;
 	}

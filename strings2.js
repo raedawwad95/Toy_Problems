@@ -7,6 +7,15 @@
 
 	function nextItem(items, elem){
 		//your code is here
+		for (var i = 0; i < items.length; i++) {
+			
+				if(items[i]===elem && items[i+1]!==undefined){
+				return items[i+1];
+			}else if(items[i+1]===undefined){
+				return null;
+			}
+
+		}
 	}
 
 //  We need a function that can transform a number into a string.
@@ -16,4 +25,6 @@
 
 	function numberToString(num) {
 	  //your code is here
+	  string =num.toString();
+	  return s;
 	}

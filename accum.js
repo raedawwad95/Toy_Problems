@@ -6,4 +6,22 @@
 
     function accum(input){
         //your code is here
+        var arr = input.split('');
+        var str='';
+        for (var i = 0; i < arr.length; i++) {
+        	for (var j = 0; j < i+1; j++) {
+        		if(j===0)
+        		{
+        		str +=arr[i].toUpperCase() ;
+        	}else{
+        		str +=arr[i].toLowerCase() ;
+        	}
+        	}
+        	if(i ===arr.length-1){
+        	str +=''
+        	}else{
+        	str +='-'
+        }
+        }
+        return str;
     }

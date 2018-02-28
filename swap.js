@@ -3,4 +3,14 @@
 	// ToYPRoblEm --> tOyprOBLeM
 	function swap(input){
 		//your code is here
+		var str ='';
+		for (var i = 0; i < input.length; i++) {
+			if(input[i] ===input[i].toUpperCase()){
+
+				str +=input[i].toLowerCase();
+			}else{
+				str +=input[i].toUpperCase();
+			}
+		}
+		return str;
 	}
